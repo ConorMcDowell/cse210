@@ -13,7 +13,6 @@ class Program
         while (choice != "5")
         {
             menu1.Display();
-            Console.Write("What would you like to do? ");
             choice = Console.ReadLine();
             
             if (choice == "1")
