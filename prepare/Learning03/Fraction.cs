@@ -37,7 +37,6 @@ class Fraction
 
     public string GetFractionString ()
     {
-
         return $"{GetTopNum()}/{GetBottomNum()}";
     }
     public double GetDecimalValue ()
