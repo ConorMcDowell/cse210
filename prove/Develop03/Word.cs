@@ -13,10 +13,6 @@ class Word
             {
                 words[i] = "_";
             }
-            else
-            {
-                i++;
-            }
         }
         return words;
     }

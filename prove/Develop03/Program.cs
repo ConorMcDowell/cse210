@@ -21,7 +21,7 @@ class Program
         Word word1 = new Word();
         Verse verse1 = new Verse();
         string[] words = word1.hideWords(verse1.verseList(scrip));
-        bool i = false;
+        bool quit = false;
 
         do
         {
@@ -31,7 +31,7 @@ class Program
             if (ans == "quit")
             {
                 Console.WriteLine("Goodbye!");
-                i = true;
+                quit = true;
             }
 
             else
@@ -42,6 +42,6 @@ class Program
                 words = word1.hideWords(words);
             }
 
-        }while (i == false);
+        }while (quit == false);
     }
 }
