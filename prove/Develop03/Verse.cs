@@ -1,15 +1,13 @@
 class Verse
 {
-    public string[] verseList()
+    public string[] verseList(string scrip)
     {
-        string verse = "And he answered, No. And he said unto him, Yea.";
-        string[] words = verse.Split(" ");
+        string[] words = scrip.Split(" ");
         return words;
     }
 
-    public string reference()
+    public string reference(string name)
     {
-        string reference = "Alma 11:29, 33";
-        return reference;
+        return name;
     }
 }
