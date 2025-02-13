@@ -8,6 +8,7 @@ class Program
 {
     static void Main(string[] args)
     {
+        //Extra Functionality: The user can input a scripture to memorize
         Console.Write("Please enter your scripture: ");
         string scrip = Console.ReadLine();
 
