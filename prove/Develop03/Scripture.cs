@@ -6,7 +6,7 @@ class Scripture
     private string scripture;
     private string refName;
     private string[] listWords;
-
+    //Code to store a default scripture to be displayed if a scripture is not given by the user
     public Scripture()
     {
         scripture = "And he answered, No. And he said unto him, Yea.";
