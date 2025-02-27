@@ -58,8 +58,10 @@ class Activity
         string time = Console.ReadLine();
         int seconds = int.Parse(time);
 
+        Console.Clear();
         Console.WriteLine("Get ready!");
         Animation();
+        Console.Clear();
 
         return seconds;
     }
@@ -115,5 +117,6 @@ class Activity
         Console.WriteLine($"You have completed the {name} activity.");
         Console.WriteLine($"It took you {seconds} seconds.");
         Animation();
+        Console.Clear();
     }
 }
