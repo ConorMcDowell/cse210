@@ -23,10 +23,7 @@ class Reflection : Activity
         prompts.Add("Think of a hard time you went through and how you overcame it");
         prompts.Add("Reflect on how you have helped someone in need");
         
-        Random random = new Random(); 
-        int random1 = random.Next(0, prompts.Count);
-
-        Console.WriteLine($"{prompts[random1]}");
+        Random(prompts);
     }
 
     public void QuestionGenerator(int seconds)
@@ -40,12 +37,9 @@ class Reflection : Activity
         questions.Add("How did you feel when it was complete? ");
         questions.Add("How can you keep this experience in mind in the future? ");
 
-        Random random = new Random(); 
-
         for (int i = 0; i < seconds; i += 10)
         {
-            int random1 = random.Next(0, questions.Count);
-            Console.WriteLine($"{questions[random1]}"); 
+            Random(questions);
             CountDown(10);
         }       
     }

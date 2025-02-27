@@ -83,6 +83,15 @@ class Activity
         Console.Write("\b \b");
     }
 
+    
+    public void Random(List<string> prompts)
+    {
+        Random random = new Random(); 
+        int random1 = random.Next(0, prompts.Count);
+
+        Console.WriteLine($"{prompts[random1]}");
+    } 
+
     public void CountDown(int seconds)
     {
         for (int i = 0; i < seconds; i++)
