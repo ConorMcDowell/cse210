@@ -71,6 +71,11 @@ class Activity
         Console.Write("\b \b");
         Console.Write("\b \b");
         Console.Write("\b \b");
+        Console.Write("^^^");
+        Thread.Sleep(1000);
+        Console.Write("\b \b");
+        Console.Write("\b \b");
+        Console.Write("\b \b");
         Console.Write("<<<");
         Thread.Sleep(1000);
         Console.Write("\b \b");
