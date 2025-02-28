@@ -11,7 +11,8 @@ class Activity
             Console.WriteLine("1. Breathing");
             Console.WriteLine("2. Reflecting");
             Console.WriteLine("3. Listing");
-            Console.WriteLine("4. Quit");
+            Console.WriteLine("4. Pushups");
+            Console.WriteLine("5. Quit");
 
             Console.Write("My choice: ");
             string choice = Console.ReadLine();
@@ -33,6 +34,11 @@ class Activity
                 listing1.List();
             }
             else if (myChoice == 4)
+            {
+                Pushups pushups1 = new Pushups();
+                pushups1.Pushup();
+            }
+            else if (myChoice == 5)
             {
                 quit = true;
                 Console.WriteLine("Goodbye!");
