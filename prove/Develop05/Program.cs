@@ -73,6 +73,7 @@ class Program
         Console.WriteLine("1. Simple");
         Console.WriteLine("2. Eternal");
         Console.WriteLine("3. Checklist");
+        Console.WriteLine("4. Academic");
         Console.Write("What kind of goal would you like to do? ");
         string type = Console.ReadLine();
         int type1 = int.Parse(type);
@@ -91,6 +92,11 @@ class Program
         {
             ChecklistGoal checklist1 = new ChecklistGoal();
             goals.Add(checklist1.Display());
+        }
+        else if (type1 == 4)
+        {
+            AcademicGoal academic1 = new AcademicGoal();
+            goals.Add(academic1.Display());
         }
         else 
         {
@@ -164,12 +170,21 @@ class Program
                 Console.Write($"{complete[i]}");
             }
         }
+        else if (complete[0] == "Academic")
+        {
+            SimpleGoal simple1 = new SimpleGoal();
+            complete[4] = simple1.SetDone(complete[4]);
+            for (int i = 0; i < complete.Length; i++)
+            {
+                Console.Write($"{complete[i]}");
+            }
+        }
         else if (complete[0] == "Checklist")
         {
             int completion = int.Parse(complete[4]);
             completion += 1;
             complete[4] = $"{completion}";
-            
+
             if (int.Parse(complete[4]) == int.Parse(complete[5]))
             {
                 _totalPoints += int.Parse(complete[6]);
