@@ -27,7 +27,7 @@ class Goal
         Console.Write("How many points will you earn for this goal? ");
         string points1 = Console.ReadLine();
 
-        string[] info = [name, description, points1];
+        string[] info = ["Eternal", name, description, points1];
         return info;
     }
 }
