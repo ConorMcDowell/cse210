@@ -1,0 +1,3 @@
+Simple, temple, go to the temple this week, 100, [ ], 
+pray, pray every day, 20, 
+Checklist, study, read scriptures every day, 50, 0, 5, 200, 
