@@ -13,6 +13,6 @@ class Running : Exercise
     }
     public float CalcSpeed()
     {
-        return _distance / _length;
+        return (_distance * 60) / _length;
     }
 }
